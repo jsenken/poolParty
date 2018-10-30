@@ -4,7 +4,7 @@ const db = require("../models");
 // This file empties the Books collection and inserts the books below
 
 mongoose.connect(
-  process.env.MONGODB_URI ||
+  "mongodb://heroku_j1c90gv6:3iac0s6mlqnuca9mr8hifquvkj@ds237723.mlab.com:37723/heroku_j1c90gv6" ||
   "mongodb://localhost/testProject3"
 );
 

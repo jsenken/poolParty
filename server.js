@@ -36,7 +36,7 @@ app.get('/', function(req, res) {
     res.send('hello');
 });
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/testProject3");
+mongoose.connect("mongodb://heroku_j1c90gv6:3iac0s6mlqnuca9mr8hifquvkj@ds237723.mlab.com:37723/heroku_j1c90gv6" || "mongodb://localhost/testProject3");
 
 // Start the API server
 app.listen(PORT, function() {
