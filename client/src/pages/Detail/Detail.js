@@ -328,6 +328,8 @@ changeAnswer5b = ()  => {
 
         <Row>
           <Col size="md-4"></Col>
+          Entry Fee: $5.00
+          <PayPalBtn></PayPalBtn>
           <Col size="md-4">
             <FormBtn
                     // disabled={!(this.state.author && this.state.title)}
@@ -342,7 +344,6 @@ changeAnswer5b = ()  => {
           <Col size="md-2">
             <Link to="/">← Back to Pools</Link>
           </Col>
-          <PayPalBtn></PayPalBtn>
           <Col size="md-2">
           </Col>
         </Row>
