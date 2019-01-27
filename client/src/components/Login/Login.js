@@ -4,6 +4,8 @@ import { connect } from 'react-redux';
 import { loginUser } from '../../actions/authentication';
 import classnames from 'classnames';
 import './login.css';
+import logo from '../../media/pool.png';
+
 
 
 class Login extends Component {
@@ -60,6 +62,10 @@ class Login extends Component {
         return(
         <div className="container" style={{ marginTop: '50px', width: '400px'}}>
             <form onSubmit={ this.handleSubmit }>
+                <div className="Logo">
+                    <img src={logo}></img>
+                </div>
+                <br></br>
                 <div className="form-group">
                     <input
                     type="email"
